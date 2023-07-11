@@ -1,0 +1,25 @@
+.container-event {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--light-color);
+}
+
+.event-right {
+  padding: 48px;
+
+  &-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+  }
+  &-text {
+    margin: 0;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}

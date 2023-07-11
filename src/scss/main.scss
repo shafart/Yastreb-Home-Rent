@@ -6,11 +6,8 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/choose";
+@import "./components/rent-map";
+@import "./components/event";
+@import "./components/footer";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}

@@ -1,0 +1,28 @@
+.container-footer {
+  @include flex-all-sb;
+}
+.social {
+  @include flex-all-sb;
+
+  &__link {
+    svg {
+      display: block;
+      object-fit: cover;
+      width: 30px;
+      height: 30px;
+      margin-right: 16px;
+      fill: #DDE0F0;
+    }
+  }
+}
+
+
+.footer-small {
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #B5BBDB;
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
