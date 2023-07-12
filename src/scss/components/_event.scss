@@ -15,11 +15,17 @@
     line-height: 46px;
     font-weight: 400;
   }
+
   &-text {
-    margin: 0;
-    margin-top: 25px;
+    margin: 25px 0 100px 0;
     font-size: 20px;
     font-weight: 400;
+    line-height: 26px;
+  }
+
+  time {
+    color: #B5BBDB;
+    font-size: 20px;
     line-height: 26px;
   }
 }

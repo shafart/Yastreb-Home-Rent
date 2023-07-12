@@ -1,0 +1,39 @@
+.container-cabinet {
+  @include flex-all-sb;
+  padding: 12px 24px;
+  background-color: var(--light-color);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.cabinet-left {
+  display: flex;
+  align-items: center;
+}
+
+.cabinet-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &-btn {
+    padding: 12px 18px;
+    border-radius: 24px;
+    background: #7EA373;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+
+.house-number {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    display: block;
+  }
+
+}

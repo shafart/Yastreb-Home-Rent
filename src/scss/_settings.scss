@@ -34,12 +34,19 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
   padding: 0 48px;
 }
 
+.site-container-cabinet {
+  overflow: hidden;
+  padding: 0 48px;
+  margin: 0 0 0 200px;
+}
+
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -86,6 +93,12 @@ a {
   max-width: 1824px;
 }
 
+.container-cabinet {
+  margin: 0 auto;
+  max-width: 1584px;
+}
+
+
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -107,4 +120,3 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
-

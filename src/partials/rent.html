@@ -1,0 +1,33 @@
+<section class="rent">
+  <div class="container container-rent">
+    <img src="../img/rent.png" alt="rent">
+    <div class="rent-right">
+      <h2 class="rent-right-title">Дата бронирования</h2>
+      <div class="rent-date-wrapper">
+        <div class="rent-date">
+          <svg>
+            <use xlink:href="img/sprite.svg#date"></use>
+          </svg>
+          <span>Выберите дату</span>
+        </div>
+        <input type="date" id="date-rent" name="date-rent">
+        <input type="number" id="number-of-days" name="number-of-days" min="1" placeholder="Срок:">
+      </div>
+      @include('../partials/check-tel.html')
+      <span class="rent-right-total">15 000 руб</span>
+      <p class="rent-right-desc">После оплаты вы&nbsp;автоматически регистрируетесь и&nbsp;попадаете в&nbsp;кабинет</span>
+      </p>
+      <input type="text" name="promocode" placeholder="Промокод">
+      <button class="rent-tel-btn btn-reset" type="submit">проверить</button>
+      <div class="payment">
+        <svg>
+          <use xlink:href="img/sprite.svg#info"></use>
+        </svg>
+        <span>Подтвердите оплату одним из указанных способов</span>
+        <img src="../img/visa.png" alt="visa">
+        <img src="../img/mscard.png" alt="master card">
+        <img src="../img/qiwi.png" alt="qiwi">
+      </div>
+    </div>
+  </div>
+</section>

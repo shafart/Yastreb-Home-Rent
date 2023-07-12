@@ -1,0 +1,136 @@
+.container-rent {
+  display: flex;
+  margin-top: 24px;
+  padding: 48px;
+  background-color: var(--light-color);
+  border-radius: 24px;
+}
+
+.rent-right {
+  width: 696px;
+  margin-left: 48px;
+  margin-right: 48px;
+  padding: 48px;
+  background: linear-gradient(180deg, #F6F8FC 0%, #FAFAFA 100%);
+  border-radius: 24px;
+}
+
+.rent-date-wrapper {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDE0F0;
+}
+
+.rent-date {
+  height: 60px;
+  width: 192px;
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-radius: 30px;
+  color: #7EA373;
+  font-family: "Gilroy Medium";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  background: linear-gradient(180deg, #ECF0EA 0%, #ECF0EA 100%);
+
+  svg {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    fill: #7EA373;
+  }
+}
+
+input[type="date"],
+input[type="number"] {
+  height: 60px;
+  width: 192px;
+  text-align: center;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.rent-right-title {
+  margin: 0 0 16px 0;
+  color: #1B2E3F;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+
+  &-tel {
+    margin: 16px 0 4px 0;
+  }
+}
+
+.rent-right-desc {
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #B5BBDB;
+
+  span {
+    color: #7EA373;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+input[type="tel"],
+input[type="text"] {
+  width: 55%;
+  height: 60px;
+  padding: 17px 58px 17px 24px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 30px;
+}
+
+
+.rent-tel {
+  display: flex;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDE0F0;
+
+}
+
+.rent-tel-btn {
+  width: 192px;
+  padding: 18px 24px;
+  color: #7EA373;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #ECF0EA 0%, #ECF0EA 100%);
+}
+
+.rent-right-total {
+  display: block;
+  margin-top: 16px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  color:  var(--light-primary);
+}
+
+.payment {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: #DDE0F0;
+  }
+}

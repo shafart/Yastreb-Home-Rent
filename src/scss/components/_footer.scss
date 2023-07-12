@@ -1,5 +1,7 @@
 .container-footer {
   @include flex-all-sb;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .social {
   @include flex-all-sb;
@@ -18,6 +20,7 @@
 
 
 .footer-small {
+  cursor: pointer;
   font-size: 16px;
   line-height: 22px;
   text-decoration-line: underline;
