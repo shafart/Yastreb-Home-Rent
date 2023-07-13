@@ -2,16 +2,17 @@
   position: absolute;
   top: 0;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   background-color: var(--light-color);
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom-right-radius: 24px;
 
   &-list {
     list-style: none;
-    padding: 24px;
+    padding: 19px;
     margin: 0;
     border-radius: 24px;
     background: #F6F8FC;

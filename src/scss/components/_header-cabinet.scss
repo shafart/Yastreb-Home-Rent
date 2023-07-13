@@ -1,4 +1,4 @@
-.container-cabinet {
+.container-cabinet-header {
   @include flex-all-sb;
   padding: 12px 24px;
   background-color: var(--light-color);
@@ -31,6 +31,18 @@
   margin-left: 12px;
   display: flex;
   flex-direction: column;
+
+  &-text {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &-date {
+    color: #B5BBDB;
+    font-size: 12px;
+    line-height: 16px;
+  }
 
   span {
     display: block;
