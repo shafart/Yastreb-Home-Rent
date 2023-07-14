@@ -73,3 +73,11 @@
     object-fit: cover;
   }
 }
+
+.menu-list-item-link--active {
+  color: #7EA373;
+}
+
+.menu-list-item-svg--active {
+  fill:  #7EA373 !important;
+}

@@ -1,0 +1,48 @@
+.your-balance-text {
+  margin: 0;
+  color: #B5BBDB;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.your-balance-total {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.pin-card {
+  margin-top: auto;
+  padding: 16px 24px;
+  border-radius: 24px;
+  background: #F6F8FC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+
+    &-text {
+      color: #B5BBDB;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-number {
+      color: var(--primary-color);
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+.pin-card-btn  {
+  padding: 12px 16px;
+  border-radius: 24px;
+  background: var(--light-color);
+  color: #7EA373;
+}

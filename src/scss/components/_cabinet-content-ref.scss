@@ -1,10 +1,5 @@
-.header-ref {
-  border-radius: 24px 24px 0px 0px;
-  background: #F1F3FB;
-  padding: 8px;
-}
 
-.nav-ref__list {
+.nav-cabinet__list {
   display: flex;
   align-items: center;
 }
@@ -18,25 +13,9 @@
 
 }
 
-.nav-ref__item {
-  cursor: pointer;
-  border-radius: 24px;
-  background: #F6F8FC;
-  padding: 12px 34px;
 
-  &:last-child {
-    margin-left: auto;
-  }
 
-  &--active {
-    color: #1B2E3F;
-    background: var(--light-color);
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.nav-ref__link {
+.cabinet-ref__link {
   color: #1B2E3F;
   font-size: 16px;
   line-height: 22px;

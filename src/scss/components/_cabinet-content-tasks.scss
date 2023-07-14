@@ -1,0 +1,38 @@
+.tasks-content {
+  display: flex;
+  padding: 48px;
+  background-color: var(--light-color);
+  border-radius: 0 0 24px 24px;
+}
+
+.swiper-slide-title {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.swiper-slide-decr {
+  color: #B5BBDB;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 285px;
+
+  span {
+    cursor: pointer;
+    color: #7EA373;
+    text-decoration-line: underline;
+  }
+}
+
+.swiper-slide-text {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.social-task {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}

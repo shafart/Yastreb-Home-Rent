@@ -6,6 +6,7 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/header-nav-cabinet";
 @import "./components/title";
 @import "./components/rent-map";
 @import "./components/event";
@@ -14,5 +15,8 @@
 @import "./components/menu-cabinet";
 @import "./components/cabinet-content";
 @import "./components/cabinet-content-ref";
+@import "./components/cabinet-content-tasks";
+@import "./components/cabinet-content-balance";
+@import "./components/cabinet-content-withdrawal";
 @import "./components/footer";
 

@@ -1,0 +1,33 @@
+.transaction-container {
+  padding: 24px;
+  background-color: var(--light-color);
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transactions-item-left-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactions-item-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactions-name,
+.transactions-total {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 22px;
+}
+.transactions-date,
+.transactions-status {
+  color: #B5BBDB;
+  font-size: 16px;
+  line-height: 22px;
+}
