@@ -3,10 +3,25 @@
   background-color: var(--light-color);
 }
 
-.transaction-item {
+.transactions-item {
+  padding: 12px 24px;
+  border-radius: 24px;
+  background: #F6F8FC;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+}
+
+.transactions-item-left {
+  display: flex;
+  img {
+    margin-right: 16px;
+  }
 }
 
 .transactions-item-left-wrap {
@@ -25,9 +40,17 @@
   font-size: 16px;
   line-height: 22px;
 }
+
 .transactions-date,
 .transactions-status {
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
 }
+
+.transactions-status {
+  font-size: 18px;
+  color: red;
+}
+
+

@@ -1,50 +1,74 @@
-// // Количество транзакций на одной странице
-// var transactionsPerPage = 5;
+// Константы для хранения текущей страницы и количества страниц
+let currentPage = 1;
+const totalPages = 5;
 
-// // Функция для получения списка транзакций с JSONPlaceholder API
-// async function getTransactions(pageNumber) {
-//   var response = await fetch('https://jsonplaceholder.typicode.com/posts?_page=' + pageNumber + '&_limit=' + transactionsPerPage);
-//   var transactions = await response.json();
+// Функция для получения данных с jsonplaceholder/posts
+function getTransactions(page) {
+  // Здесь можно использовать AJAX-запрос для получения данных с jsonplaceholder/posts
+  // Пример использования Fetch API:
+  fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=8`)
+    .then(response => response.json())
+    .then(data => {
+      // Полученные данные используются для заполнения блока транзакций
+      const transactionsContainer = document.getElementById('transactions-container');
 
-//   return transactions;
-// }
+      // Очистить предыдущие транзакции
+      transactionsContainer.innerHTML = '';
 
-// // Функция для генерации списка транзакций
-// function generateTransactionList(transactions) {
-//   var transactionsHTML = '';
-//   for (var i = 0; i < transactions.length; i++) {
-//     var transaction = transactions[i];
-//     transactionsHTML += '<div class="transaction-item">ID: ' + transaction.id + ', Title: ' + transaction.title + '</div>';
-//   }
+      // Пройти по данным и создать новые транзакции
+      data.forEach(transaction => {
+        const html = `
+            <div class="transactions-item">
+              <div class="transactions-item-left">
+                <img src="../img/rub.png" alt="rub">
+                <div class="transactions-item-left-wrap">
+                  <span class="transactions-name">Вывод средств</span>
+                  <span class="transactions-date">6 марта, 22:13</span>
+                </div>
+              </div>
+              <div class="transactions-item-right">
+                <span class="transactions-total">999 руб</span>
+                <span class="transactions-status">${transaction.id}</span>
+              </div>
+            </div>
+          `;
+        transactionsContainer.innerHTML += html;
+      });
+    })
+    .catch(error => {
+      console.error('Ошибка получения данных:', error);
+    });
+}
 
-//   document.getElementById('transactions-container').innerHTML = transactionsHTML;
-// }
+// Функция для обновления пагинации
+function updatePagination(currentPage) {
+  const paginationContainer = document.getElementById('pagination-container');
+  paginationContainer.innerHTML = '';
 
-// // Функция для генерации пагинации
-// function generatePagination(totalPages) {
-//   var paginationHTML = '';
-//   for (var i = 1; i <= totalPages; i++) {
-//     paginationHTML += '<button onclick="handlePageClick(' + i + ')">' + i + '</button>';
-//   }
+  // Создать кнопки для каждой страницы
+  for (let page = 1; page <= totalPages; page++) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = page;
+    button.addEventListener('click', () => {
+      if (page !== currentPage) {
+        currentPage = page;
+        getTransactions(currentPage);
+        updatePagination(currentPage);
+      }
+    });
 
-//   document.getElementById('pagination-container').innerHTML = paginationHTML;
-// }
+    // Добавить класс "active" к текущей странице
+    if (page === currentPage) {
+      button.classList.add('active');
+    }
 
-// // Функция для обработки клика по странице
-// async function handlePageClick(pageNumber) {
-//   var transactions = await getTransactions(pageNumber);
-//   generateTransactionList(transactions);
-// }
+    paginationContainer.appendChild(button);
+  }
+}
 
-// // Функция для инициализации
-// async function init() {
-//   var response = await fetch('https://jsonplaceholder.typicode.com/posts');
-//   var totalTransactions = await response.json();
-//   var totalPages = Math.ceil(totalTransactions.length / transactionsPerPage);
-
-//   handlePageClick(1);
-//   generatePagination(totalPages);
-// }
-
-// // Запуск инициализации
-// init();
+  // Запустить получение транзакций для первой страницы при загрузке страницы
+  document.addEventListener('DOMContentLoaded', () => {
+    getTransactions(currentPage);
+    updatePagination(currentPage); // Вызываем обновление пагинации один раз при загрузке страницы
+  });

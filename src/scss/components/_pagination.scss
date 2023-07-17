@@ -1,0 +1,24 @@
+.pagination-container {
+  padding: 0 0 24px 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-color);
+  border-radius: 0 0 24px 24px;
+
+}
+
+.pagination-container button {
+  cursor: pointer;
+  margin: 0 4px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
+  background-color: var(--light-color);
+  border-radius: 4px;
+}
+
+.pagination-container button.active {
+  background-color: #F6F8FC;
+}
