@@ -1,15 +1,9 @@
-.transaction-container {
+.enrollment-container {
   padding: 24px;
   background-color: var(--light-color);
-  svg {
-    margin-left: 50%;
-    width: 50px;
-    height: 50px;
-    fill: #B5BBDB;
-  }
 }
 
-.transactions-item {
+.enrollments-item {
   padding: 12px 24px;
   border-radius: 24px;
 
@@ -29,38 +23,38 @@
   }
 }
 
-.transactions-item-left {
+.enrollments-item-left {
   display: flex;
   img {
     margin-right: 16px;
   }
 }
 
-.transactions-item-left-wrap {
+.enrollments-item-left-wrap {
   display: flex;
   flex-direction: column;
 }
 
-.transactions-item-right {
+.enrollments-item-right {
   display: flex;
   flex-direction: column;
 }
 
-.transactions-name,
-.transactions-total {
+.enrollments-name,
+.enrollments-total {
   color: var(--primary-color);
   font-size: 16px;
   line-height: 22px;
 }
 
-.transactions-date,
-.transactions-status {
+.enrollments-date,
+.enrollments-status {
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
 }
 
-.transactions-status {
+.enrollments-status {
   font-size: 18px;
   color: red;
 }
