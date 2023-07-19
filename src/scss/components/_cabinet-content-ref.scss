@@ -13,8 +13,6 @@
 
 }
 
-
-
 .cabinet-ref__link {
   color: #1B2E3F;
   font-size: 16px;
@@ -50,14 +48,11 @@
 }
 
 .icon-container {
+  cursor: pointer;
   position: absolute;
   top: 51%;
   right: 57%;
   transform: translateY(-50%);
-}
-
-.icon-container {
-
   img {
     width: 24px;
     height: 24px;

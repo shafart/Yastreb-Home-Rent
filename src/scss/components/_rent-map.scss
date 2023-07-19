@@ -1,6 +1,56 @@
 .rent-map {
   margin: 24px 0 48px 0;
-  img {
-    border-radius: 24px;
+  &-wrap {
+    position: relative;
   }
+}
+
+
+.rent-map-img {
+  width: 100%;
+}
+
+.rent-map-btn {
+  cursor: pointer;
+
+  &-active {
+    fill: #bef7a3;
+  }
+}
+
+.rent-home-modal {
+  display: none;
+}
+
+.rent-home-modal-active {
+  position: absolute;
+  top: 20%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  display: block;
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--light-color);
+
+  h2 {
+    margin: 0;
+    color: #1B2E3F;
+    font-size: 20px;
+    line-height: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  button {
+    padding: 12px 18px;
+    background: #7EA373;
+    border-radius: 24px;
+    border: none;
+
+    a {
+      color: var(--light-color);
+    }
+  }
+
 }
