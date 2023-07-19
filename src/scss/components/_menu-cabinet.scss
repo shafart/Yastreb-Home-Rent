@@ -40,6 +40,11 @@
         font-size: 16px;
         line-height: 22px;
         text-decoration: none;
+
+        &:hover {
+          color: var(--amulet-color);
+        }
+
       }
     }
   }
@@ -61,11 +66,17 @@
   padding: 12px;
   text-align: center;
   border-radius: 24px;
-  background: #F6F8FC;
+  background: var(--white-liac-color);
   font-family: "Gilroy Medium";
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  transition: background-color .2s ease-in-out;
+  &:hover{
+    background: var(--amulet-color);
+    color: #fff;
+  }
+
   svg {
     margin-right: 8px;
     width: 24px;
@@ -76,9 +87,9 @@
 }
 
 .menu-list-item-link--active {
-  color: #7EA373;
+  color: var(--amulet-color);
 }
 
 .menu-list-item-svg--active {
-  fill:  #7EA373 !important;
+  fill: var(--amulet-color) !important;
 }

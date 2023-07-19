@@ -22,6 +22,11 @@
   border-radius: 24px;
   background: #F6F8FC;
   padding: 12px 61px;
+  transition: background-color .2s ease-in-out;
+  &:hover{
+    background: #7ea373ef;
+
+  }
 }
 
 .tags__link {
@@ -29,6 +34,9 @@
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
+  &:hover{
+    color:var(--light-color)
+  }
 }
 
 .content-right-title {
