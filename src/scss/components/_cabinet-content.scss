@@ -3,6 +3,11 @@
   padding: 48px;
   background: var(--light-color);
   border-radius: 24px;
+  img {
+    @include desktop {
+      width: 60%;
+    }
+  }
 }
 
 .cabinet-content-right {
@@ -13,6 +18,7 @@
 .tags__list {
   display: flex;
   align-items: center;
+  flex-wrap:wrap;
   gap: 8px;
   margin-bottom: 48px;
 }

@@ -1,6 +1,9 @@
 /* stylelint-disable */
 
 @mixin burger {
+  @include tablet {
+    display: none;
+  }
   --burger-width: 30px;
   --burger-height: 30px;
   --burger-line-height: 2px;

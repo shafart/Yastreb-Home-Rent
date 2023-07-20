@@ -1,4 +1,6 @@
+
 .menu {
+  z-index: 5;
   position: absolute;
   top: 0;
   left: 0;
@@ -10,6 +12,10 @@
   flex-direction: column;
   justify-content: center;
   border-bottom-right-radius: 24px;
+
+  @include tablet {
+    display: none;
+  }
 
   &-list {
     list-style: none;
@@ -49,6 +55,9 @@
     }
   }
 
+}
+.menu--active {
+  display: block;
 }
 
 .logo-cabinet {
@@ -96,3 +105,5 @@
 .menu-list-item-svg--active {
   fill: var(--amulet-color) !important;
 }
+
+

@@ -1,0 +1,29 @@
+
+.menu-burger {
+  display: none;
+  cursor: pointer;
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+}
+.menu-burger__bar {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+.menu-burger--active .menu-burger__bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-burger--active .menu-burger__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-burger--active .menu-burger__bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}

@@ -16,6 +16,9 @@
 
   &:last-child {
     margin-left: auto;
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &--active {

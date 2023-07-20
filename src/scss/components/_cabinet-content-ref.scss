@@ -10,6 +10,16 @@
   display: flex;
   border-radius: 0px 0px 24px 24px;
   gap: 48px;
+  img {
+    border-radius: 24px;
+    @include big-desktop {
+      width: 50%;
+      object-fit: contain;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
 
 }
 
@@ -34,6 +44,7 @@
 .input-container {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
   gap: 15px;
 
   svg {
