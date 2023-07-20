@@ -85,6 +85,7 @@ input[type="number"] {
 }
 
 input[type="tel"],
+input[type="password"],
 input[type="text"] {
   cursor: pointer;
   width: 55%;
@@ -113,6 +114,11 @@ input[type="text"] {
   line-height: 22px;
   border-radius: 30px;
   background: linear-gradient(180deg, #ECF0EA 0%, #ECF0EA 100%);
+  transition: background-color .2s ease-in-out;
+  &:hover {
+    background: var(--amulet-color);
+    color: var(--primary-color);
+  }
 }
 
 .rent-right-total {

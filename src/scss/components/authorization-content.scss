@@ -1,0 +1,22 @@
+.authorization-btn {
+  cursor: pointer;
+  margin-top: 250px;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: var(--amulet-color);
+  &:hover{
+    background-color: #7ea373ef;
+
+  }
+
+  border-radius: 24px;
+  &-link {
+    color: var(--light-color);
+  }
+}
+
+.authorization-input {
+  width: 100% !important;
+}
+

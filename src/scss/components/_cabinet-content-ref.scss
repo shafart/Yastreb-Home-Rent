@@ -75,6 +75,11 @@
   color: #7EA373;
   font-size: 16px;
   line-height: 22px;
+  transition: background-color .2s ease-in-out;
+  &:hover{
+    background: #7EA373;
+    color: var(--primary-color);
+  }
 }
 
 .ref-content-left-title {

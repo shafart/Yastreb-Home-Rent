@@ -20,8 +20,12 @@
 
   span {
     cursor: pointer;
-    color: #7EA373;
+    color: var(--amulet-color);
     text-decoration-line: underline;
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 }
 

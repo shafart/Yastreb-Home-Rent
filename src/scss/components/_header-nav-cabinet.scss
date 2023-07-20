@@ -7,8 +7,12 @@
 .nav-cabinet__item {
   cursor: pointer;
   border-radius: 24px;
-  background: #F6F8FC;
+  background: var(--white-liac-color);
   padding: 12px 34px;
+  &:hover {
+    background: var(--amulet-color);
+    color: var(--primary-color);
+  }
 
   &:last-child {
     margin-left: auto;
@@ -19,6 +23,7 @@
     background: var(--light-color);
     font-size: 16px;
     line-height: 22px;
+
   }
 }
 
@@ -26,6 +31,9 @@
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
+  &:hover {
+    color: var(--primary-color);
+  }
 
   &--active {
     color: #1B2E3F;

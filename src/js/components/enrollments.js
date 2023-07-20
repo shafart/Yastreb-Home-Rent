@@ -21,7 +21,7 @@ function getEnrollments(page) {
         const html = `
           <div class="enrollments-item ${index % 2 === 0 ? 'enrollments-item-even' : 'enrollments-item-odd'}">
             <div class="enrollments-item-left">
-              <img src="../img/rub.png" alt="rub">
+              <img src="../img/status.png" alt="status">
               <div class="enrollments-item-left-wrap">
                 <span class="enrollments-name">Реферальное зачисление</span>
                 <span class="enrollments-date">6 марта, 22:13</span>
