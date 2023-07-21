@@ -1,18 +1,28 @@
 .container-title {
   @include flex-all-sb;
+  flex-wrap: wrap;
 }
 
 .title-right {
-  padding: 24px 24px 24px 48px;
+  padding: 24px;
   @include flex-all-sb;
   background-color: var(--light-color);
   border-radius: 24px;
   max-width: 745px;
+  @include small-tablet {
+    padding: 16px;
+  }
 
   &-text {
+    margin: 0;
     font-size: 20px;
     line-height: 26px;
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
+
 
   svg {
     width: 24px;
@@ -28,4 +38,9 @@
   font-size: 66px;
   font-weight: 400;
   line-height: 72px;
+  @include small-tablet {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+  }
 }

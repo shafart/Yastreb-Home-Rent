@@ -1,5 +1,6 @@
 
 .menu-burger {
+  z-index: 10;
   display: none;
   cursor: pointer;
   @include tablet {
@@ -10,6 +11,7 @@
   }
 }
 .menu-burger__bar {
+
   width: 25px;
   height: 2px;
   background-color: #000;
@@ -25,5 +27,5 @@
 }
 
 .menu-burger--active .menu-burger__bar:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }

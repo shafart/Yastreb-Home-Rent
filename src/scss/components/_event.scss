@@ -4,25 +4,48 @@
   padding: 24px;
   border-radius: 24px;
   background-color: var(--light-color);
+  @include mid-desktop {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  img {
+    border-radius: 24px;
+    @include big-desktop {
+      width: 50%;
+    }
+    @include mid-desktop {
+      width: 100%;
+    }
+  }
 }
 
 .event-right {
   padding: 48px;
-  img {
-    border-radius: 24px;
+
+  @include mid-desktop {
+    padding: 5px;
   }
+
 
   &-title {
     margin: 0;
     font-size: 40px;
     line-height: 46px;
     font-weight: 400;
+    @include small-tablet {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   time {

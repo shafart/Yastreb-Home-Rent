@@ -1,7 +1,9 @@
 
 .nav-cabinet__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .ref-content {
@@ -10,6 +12,9 @@
   display: flex;
   border-radius: 0px 0px 24px 24px;
   gap: 48px;
+  @include mobile {
+    padding: 18px;
+  }
   img {
     border-radius: 24px;
     @include big-desktop {
@@ -19,6 +24,7 @@
     @include desktop {
       display: none;
     }
+
   }
 
 }
@@ -103,10 +109,19 @@
   &-promo {
     margin-top: 30px;
   }
+  @include mobile {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+  }
 }
 
 .ref-content-left-text {
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

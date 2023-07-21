@@ -10,6 +10,18 @@
   background-color: var(--light-color);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
+
+  a {
+    color: #1B2E3F;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
 }
 
 .personal-acc {
@@ -26,6 +38,7 @@
     fill: #B5BBDB;
     margin-right: 8px;
   }
+
   &:hover {
     background-color: var(--amulet-color);
     color: var(--light-color);

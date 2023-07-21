@@ -5,9 +5,11 @@
   padding: 18px;
   border: none;
   background-color: var(--amulet-color);
+  @include mobile {
+    margin-top: 50px;
+  }
   &:hover{
     background-color: #7ea373ef;
-
   }
 
   border-radius: 24px;

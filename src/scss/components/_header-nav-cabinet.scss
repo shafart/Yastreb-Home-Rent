@@ -28,6 +28,9 @@
     line-height: 22px;
 
   }
+  @include mobile {
+    padding: 10px 20px;
+  }
 }
 
 .nav-cabinet__link {

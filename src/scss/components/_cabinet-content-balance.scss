@@ -1,8 +1,9 @@
 .your-balance-text {
-  margin: 0;
+  margin: 0 0 12px 0;
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
+
 }
 
 .your-balance-total {
@@ -21,6 +22,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile {
+    flex-direction: column;
+  }
 
   &-left {
     display: flex;

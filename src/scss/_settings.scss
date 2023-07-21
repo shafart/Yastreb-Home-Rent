@@ -36,6 +36,9 @@ a {
 .site-container {
   overflow: hidden;
   padding: 0 48px;
+  @include small-tablet {
+    padding: 0 16px;
+  }
 }
 
 .site-container-cabinet {
@@ -44,13 +47,13 @@ a {
   margin: 0 0 0 200px;
   @include tablet {
     margin: 0;
+    padding: 0 24px;
   }
 
 }
 
 .is-hidden {
   display: none !important;
-  /* stylelint-disable-line declaration-no-important */
 }
 
 .btn-reset {
@@ -96,6 +99,7 @@ a {
 .container {
   margin: 0 auto;
   max-width: 1824px;
+  padding: 0 12px;
 }
 
 .container-cabinet {

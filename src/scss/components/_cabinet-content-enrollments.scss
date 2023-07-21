@@ -1,6 +1,9 @@
 .enrollment-container {
   padding: 24px;
   background-color: var(--light-color);
+  @include mobile {
+    padding: 12px;
+  }
 }
 
 .enrollments-item {
@@ -27,6 +30,11 @@
   display: flex;
   img {
     margin-right: 16px;
+    @include mobile {
+      height: 32px;
+      width: 32px;
+      margin: auto 8px auto 0;
+    }
   }
 }
 

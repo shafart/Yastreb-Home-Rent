@@ -1,9 +1,14 @@
 .container-cabinet-header {
   @include flex-all-sb;
+
   padding: 12px 24px;
   background-color: var(--light-color);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .cabinet-left {
@@ -25,7 +30,11 @@
     &:hover {
       background: #7ea373ef;
     }
+    @include mobile {
+      margin-top: 15px;
+    }
   }
+
 }
 
 .house-number {

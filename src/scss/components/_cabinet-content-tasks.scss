@@ -3,6 +3,17 @@
   padding: 48px;
   background-color: var(--light-color);
   border-radius: 0 0 24px 24px;
+  @include small-tablet {
+    padding: 24px;
+  }
+
+  &-left {
+    margin-right: 48px;
+    @include small-tablet {
+      margin-right: 0;
+    }
+  }
+
 }
 
 .swiper-slide-title {
@@ -10,13 +21,22 @@
   color: var(--primary-color);
   font-size: 40px;
   font-weight: 400;
+  @include mobile {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 
 .swiper-slide-decr {
   color: #B5BBDB;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
-  margin-bottom: 285px;
+  margin-bottom: 155px;
+  @include mobile {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 50px;
+  }
 
   span {
     cursor: pointer;
@@ -39,4 +59,11 @@
   display: flex;
   align-items: center;
   gap: 25px;
+}
+
+.tasks-content-img {
+  border-radius: 24px;
+  @include big-desktop {
+    display: none;
+  }
 }
