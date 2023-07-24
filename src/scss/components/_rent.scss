@@ -1,5 +1,6 @@
 .container-rent {
   display: flex;
+  align-items: center;
   margin-top: 24px;
   padding: 48px;
   background-color: var(--light-color);
@@ -22,12 +23,16 @@
 }
 
 .rent-right {
+  width: 100%;
   margin-left: 48px;
   padding: 48px;
   background: linear-gradient(180deg, #F6F8FC 0%, #FAFAFA 100%);
   border-radius: 24px;
   @include mid-desktop {
     margin: 0 auto;
+    padding: 24px;
+  }
+  @include mobile {
     padding: 12px;
   }
 }
@@ -118,7 +123,6 @@ input[type="tel"],
 input[type="password"],
 input[type="text"] {
   cursor: pointer;
-  width: 55%;
   height: 60px;
   padding: 17px 58px 17px 24px;
   margin-right: 16px;
@@ -129,7 +133,9 @@ input[type="text"] {
 
 .rent-tel {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 24px;
+  gap: 12px;
   border-bottom: 1px solid #DDE0F0;
 
 }
@@ -178,4 +184,10 @@ input[type="text"] {
     height: 24px;
     fill: #DDE0F0;
   }
+}
+
+.promocode-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
