@@ -22,6 +22,7 @@
   }
 }
 
+
 .rent-right {
   width: 100%;
   margin-left: 48px;
@@ -151,9 +152,11 @@ input[type="text"] {
   background: linear-gradient(180deg, #ECF0EA 0%, #ECF0EA 100%);
   transition: background-color .2s ease-in-out;
 
-  &:hover {
-    background: var(--amulet-color);
-    color: var(--primary-color);
+  @include hov-mobile {
+    &:hover{
+      background: var(--amulet-color);
+      color: var(--primary-color);
+    }
   }
 }
 

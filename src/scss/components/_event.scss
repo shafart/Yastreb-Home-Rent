@@ -7,6 +7,10 @@
   @include mid-desktop {
     align-items: center;
     flex-wrap: wrap;
+
+  }
+  @include tablet {
+    padding: 12px;
   }
   img {
     border-radius: 24px;

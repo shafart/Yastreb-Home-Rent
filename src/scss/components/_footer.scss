@@ -16,8 +16,10 @@
       margin-right: 16px;
       fill: #DDE0F0;
       transition: fill .2s ease;
-      &:hover {
-        fill: var(--primary-color)
+      @include hov-mobile {
+        &:hover{
+          fill: var(--primary-color)
+        }
       }
     }
   }
@@ -34,8 +36,9 @@
   &:not(:last-child) {
     margin-right: 16px;
   }
-
-  &:hover {
-    color:var(--primary-color)
+  @include hov-mobile {
+    &:hover{
+      color:var(--primary-color)
+    }
   }
 }

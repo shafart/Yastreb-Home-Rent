@@ -9,9 +9,11 @@
   border-radius: 24px;
   background: var(--white-liac-color);
   padding: 12px 34px;
-  &:hover {
-    background: var(--amulet-color);
-    color: var(--primary-color);
+  @include hov-mobile {
+    &:hover{
+      background: var(--amulet-color);
+      color: var(--primary-color);
+    }
   }
 
   &:last-child {
@@ -37,8 +39,10 @@
   color: #B5BBDB;
   font-size: 16px;
   line-height: 22px;
-  &:hover {
-    color: var(--primary-color);
+  @include hov-mobile {
+    &:hover{
+      color: var(--primary-color);
+    }
   }
 
   &--active {

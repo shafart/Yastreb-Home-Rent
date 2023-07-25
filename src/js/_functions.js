@@ -50,20 +50,21 @@
 // });
 
 // Подключение свайпера
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay]);
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: "auto",
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
   },
 });
+
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';

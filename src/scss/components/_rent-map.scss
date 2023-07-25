@@ -33,8 +33,10 @@
   &-active {
     fill: #bef7a3;
   }
-  &:hover {
-    fill: #e5ffd9;
+  @include hov-mobile {
+    &:hover{
+      fill: #e5ffd9;
+    }
   }
 }
 
@@ -81,8 +83,10 @@
       padding: 10px 16px;
     }
 
-    &:hover {
-      background: #7ea373ef;
+    @include hov-mobile {
+      &:hover{
+        background: #7ea373ef;
+      }
     }
 
     a {

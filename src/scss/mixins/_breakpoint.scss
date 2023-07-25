@@ -36,6 +36,11 @@
     @content;
   }
 }
+@mixin hov-mobile {
+  @media (min-width: (576px)) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media (max-width: (576px)) {

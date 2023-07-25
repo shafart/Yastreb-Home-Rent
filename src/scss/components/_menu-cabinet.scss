@@ -48,9 +48,10 @@
         font-size: 16px;
         line-height: 22px;
         text-decoration: none;
-
-        &:hover {
-          color: var(--amulet-color);
+        @include hov-mobile {
+          &:hover{
+            color: var(--amulet-color);
+          }
         }
 
       }

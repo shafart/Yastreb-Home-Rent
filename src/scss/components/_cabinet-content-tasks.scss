@@ -43,8 +43,10 @@
     color: var(--amulet-color);
     text-decoration-line: underline;
     transition: color .2s ease-in-out;
-    &:hover {
-      color: var(--primary-color);
+    @include hov-mobile {
+      &:hover{
+        color: var(--primary-color);
+      }
     }
   }
 }

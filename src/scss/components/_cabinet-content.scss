@@ -3,22 +3,32 @@
   padding: 48px;
   background: var(--light-color);
   border-radius: 24px;
+
   @include tablet {
     padding: 24px;
   }
-  img {
-    border-radius: 24px;
-    @include desktop {
-      width: 50%;
-    }
-    @include mid-desktop {
-      display: none;
-    }
+
+}
+
+.cabinet-content-img {
+  border-radius: 24px;
+  @include big-desktop {
+    width: 50%;
+  }
+  @include desktop {
+    display: none;
   }
 }
 
 .cabinet-content-right {
+  max-width: 600px;
   margin-left: 48px;
+
+  @include mid-desktop {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
   @include mobile {
     margin-left: 0;
   }
@@ -28,34 +38,15 @@
 .tags__list {
   display: flex;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 48px;
+
   @include small-tablet {
     margin-bottom: 12px;
   }
 }
 
-.tags__item {
-  text-align: center;
-  border-radius: 24px;
-  background: #F6F8FC;
-  padding: 12px 20px;
-  transition: background-color .2s ease-in-out;
-  &:hover{
-    background: #7ea373ef;
-  }
-}
-
-.tags__link {
-  color: #B5BBDB;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: none;
-  &:hover{
-    color:var(--light-color)
-  }
-}
 
 .content-right-title {
   max-width: 100%;
@@ -65,6 +56,7 @@
   font-size: 40px;
   font-weight: 400;
   line-height: 46px;
+
   @include mobile {
     font-size: 24px;
     line-height: 26px;
@@ -73,11 +65,12 @@
 }
 
 .content-right-text {
-  max-width: 100%;
+  max-width: 500px;
   margin: 0;
   color: var(--color-primary);
   font-size: 20px;
   line-height: 26px;
+
   @include mobile {
     font-size: 16px;
     line-height: 20px;
@@ -87,8 +80,42 @@
 
 .swiper-container {
   overflow: hidden;
+}
+
+.swiper-btns-wrapper {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-btn-prev {
+  transform: scaleX(-1);
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 18px;
+  background-color: var(--white-liac-color);
+  border-radius: 100%;
+
+  @include hov-mobile {
+    &:hover{
+      background: var(--amulet-color);
+    }
+  }
+
+  svg {
+    height: 12px;
+    width: 12px;
+    fill: #B5BBDB;
+  }
 
 }
 
-
-
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #DDE0F0;
+}

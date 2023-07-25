@@ -38,9 +38,10 @@
     fill: #B5BBDB;
     margin-right: 8px;
   }
-
-  &:hover {
-    background-color: var(--amulet-color);
-    color: var(--light-color);
+  @include hov-mobile {
+    &:hover{
+      background-color: var(--amulet-color);
+      color: var(--light-color);
+    }
   }
 }
