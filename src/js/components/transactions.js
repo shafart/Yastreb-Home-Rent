@@ -1,4 +1,4 @@
-// Константы для хранения текущей страницы и количества страниц
+
 let currentPageTransactions = 1;
 const totalPagesTransactions = 5;
 
@@ -11,29 +11,24 @@ function hideLoading() {
   const transactionsContainer = document.getElementById('transactions-container');
   transactionsContainer.innerHTML = '';
 }
-// Функция для получения данных с jsonplaceholder/posts
+
 function getTransactions(page) {
-  // Здесь можно использовать AJAX-запрос для получения данных с jsonplaceholder/posts
-  // Пример использования Fetch API:
+
   showLoading()
   fetch(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=8`)
 
     .then(response => response.json())
     .then(data => {
-      hideLoading()
-      // Полученные данные используются для заполнения блока транзакций
-      const transactionsContainer = document.getElementById('transactions-container');
 
-      // Очистить предыдущие транзакции
+      hideLoading()
+      const transactionsContainer = document.getElementById('transactions-container');
       transactionsContainer.innerHTML = '';
 
-
-      // Пройти по данным и создать новые транзакции
       data.forEach((transaction, index) => {
         const html = `
           <div class="transactions-item ${index % 2 === 0 ? 'transactions-item-even' : 'transactions-item-odd'}">
             <div class="transactions-item-left">
-              <img src="../img/rub.png" alt="rub">
+              <img src="img/rub.png" alt="rub">
               <div class="transactions-item-left-wrap">
                 <span class="transactions-name">Вывод средств</span>
                 <span class="transactions-date">6 марта, 22:13</span>
@@ -54,20 +49,18 @@ function getTransactions(page) {
     });
 }
 
-// Остальной код для обновления пагинации остается без изменений
 
-// Запустить получение транзакций для первой страницы при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
   getTransactions(currentPageTransactions);
-  updatePaginationTransactions(currentPageTransactions); // Вызываем обновление пагинации один раз при загрузке страницы
+  updatePaginationTransactions(currentPageTransactions);
 });
 
-  // Функция для обновления пагинации
+
 function updatePaginationTransactions(currentPageTransactions) {
   const paginationContainerTransactions = document.getElementById('pagination-container-withdrawal');
   paginationContainerTransactions.innerHTML = '';
 
-  // Создать кнопки для каждой страницы
+
   for (let page = 1; page <= totalPagesTransactions; page++) {
     const button = document.createElement('button');
     button.type = 'button';
@@ -80,7 +73,7 @@ function updatePaginationTransactions(currentPageTransactions) {
       }
     });
 
-    // Добавить класс "active" к текущей странице
+
     if (page === currentPageTransactions) {
       button.classList.add('active');
     }
